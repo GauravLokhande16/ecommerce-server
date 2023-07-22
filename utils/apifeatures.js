@@ -28,7 +28,6 @@ class ApiFeatures {
         let queryStr = JSON.stringify(queryCopy)
         queryStr = queryStr.replace(/\b(gt|gte|lt|lte)\b/g, (key) => `$${key}`)
         this.query = this.query.find(JSON.parse(queryStr));
-        console.log("CountDocuments", this.query.find(JSON.parse(queryStr)).countDocuments());
         return  this
     }
 

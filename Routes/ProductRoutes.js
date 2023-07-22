@@ -38,7 +38,6 @@ productRoute.get(
   asyncHandler(async (req, res) => {
     const resultPerPage = 8
     const page =  Number(req.query.page) || 1;
-    console.log(req.query);
     const keyword = req.query.keyword 
     ? {
       name : {
