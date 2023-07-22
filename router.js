@@ -3,8 +3,6 @@ const asyncHandler = require("express-async-handler");
 const User = require("./Models/UserModel");
 const Product = require("./Models/ProductModel");
 const users = require("./data/users");
-const products = require("./data/product");
-
 const ImportData = express.Router();
 
 ImportData.post(
