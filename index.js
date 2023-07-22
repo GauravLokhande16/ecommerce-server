@@ -10,9 +10,12 @@ const orderRouter = require('./Routes/orderRoutes');
 dotenv.config()
 const app = express()
 
+const corsOptions = {
+    origin: '*', // Replace with the allowed origin URL
+  };
 
 app.use(express.json())
-app.use(cors());
+app.use(cors(corsOptions));
 connectDatabase()
 
 
